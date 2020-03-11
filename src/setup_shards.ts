@@ -43,7 +43,7 @@ async function getInstallAsset(
 
 async function installNeedSoftware() {
     if (platform == "linux") {
-        await exec.exec("sudo apt-get install libyaml-dev", undefined);
+        await exec.exec("apt-get install libyaml-dev", undefined);
     }
     if (platform == "darwin") {
         await exec.exec("brew install libyaml", undefined);
